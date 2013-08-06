@@ -11,7 +11,7 @@ module Nanoc
     # @option params [Nanoc::Site] site The site where this checksum store
     #   belongs to
     def initialize(params={})
-      super('tmp/checksums', 1)
+      super('checksums', 1)
 
       @site = params[:site] if params.has_key?(:site)
 

@@ -34,7 +34,7 @@ module Nanoc
     # @param [Array<Nanoc::Item, Nanoc::Layout>] objects The list of items
     #   and layouts whose dependencies should be managed
     def initialize(objects)
-      super('tmp/dependencies', 4)
+      super('dependencies', 4)
 
       @objects = objects
       @graph   = Nanoc::DirectedGraph.new([ nil ] + @objects)
